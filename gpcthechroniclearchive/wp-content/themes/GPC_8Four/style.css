@@ -1,0 +1,10713 @@
+/* 
+Theme Name: GPC 8Four
+Description: 
+Author: Sean Booker
+Author URI: http://www.8-four.com
+version: 1.0
+Template: GPC
+Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-background, threaded-comments, custom-menu
+License: GNU/GPL Version 2 or later. 
+License URI: http://www.gnu.org/licenses/gpl.html 
+Copyright: (c) 2012 8Four Media
+*/
+
+@import "styles/style-shortcodes.css";
+/*-------------------------------------------------------------------------------------------*/
+
+/* RESET */
+/*-------------------------------------------------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ | v1.0 | 20080212 */
+body, html  { height: 100%; }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, h7, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+
+table, caption, tbody, tfoot, thead, tr, th, td {
+
+
+
+
+
+
+
+	margin: 0;
+
+
+
+
+
+
+
+	padding: 0;
+
+
+
+
+
+
+
+	border: 0;
+
+
+
+
+
+
+
+	outline: 0;
+
+
+
+
+
+
+
+	font-size: 100%;
+
+
+
+
+
+
+
+	vertical-align: baseline;
+
+
+
+
+
+
+
+	background: transparent;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+body { line-height: 1; }
+
+
+
+
+
+
+
+ol, ul { list-style: none; }
+
+
+
+
+
+
+
+blockquote, q { quotes: none; }
+
+
+
+
+
+
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+
+
+
+
+
+
+:focus { outline: 0; }/* remember to define focus styles! */
+
+
+
+
+
+
+
+del { text-decoration: line-through; }
+
+
+
+
+
+
+
+table { border-collapse: collapse; border-spacing: 0; }/* tables still need 'cellspacing="0"' in the markup */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+/* GENERAL STYLES */
+/*-------------------------------------------------------------------------------------------*/
+.fl{float: left;}
+.fr{float: right;}
+.ac{text-align: center;}
+.ar{text-align: right;}
+.ss{font:italic 8pt/8pt GillSansStd, GillSansStd-Light, GillSansStd-Bold, Arial, Helvetica, sans-serif !important; line-height:15pt; padding:5px 0;}
+.tex{overflow:hidden;margin:0;}
+html body * span.clear,
+html body * div.clear,
+html body * li.clear,
+html body * dd.clear
+{
+	background: none;
+	border: 0;
+	clear: both;
+	display: block;
+	float: none;
+	font-size: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}/* http://sonspring.com/journal/clearing-floats */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body { margin:0px; font-family:GillSansStd, GillSansStd-Light, GillSansStd-Bold, Arial, Helvetica, sans-serif; background:#fff; font-size:12pt; line-height:18pt; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a{
+
+
+
+
+
+
+
+	text-transform:none;
+
+
+
+
+
+
+
+	color:#900;
+
+
+
+
+
+
+
+	text-decoration:none;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a:hover{
+
+
+
+
+
+
+
+	text-transform:none;
+
+
+
+
+
+
+
+	color:#c00;
+
+
+
+
+
+
+
+	text-decoration:none;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+img, img a{border:none;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.imgbg,a.imgbg{
+
+
+
+
+
+
+
+	background:url(images/texture-i.png);
+
+	}
+
+
+
+small{font:italic 9pt/9pt GillSansStd, GillSansStd-Light, GillSansStd-Bold, Arial, Helvetica, sans-serif !important; padding:10px 0 !important;}
+
+
+
+.box{ width:960px; margin:0px auto; padding:0;}
+
+
+
+.boxwide{ width:990px; margin:0px auto; padding:0;}
+
+
+
+.twobox,.twoboxwide{
+	float:left;
+	width:639px;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	border-right:1px solid #eee;
+	}
+
+.twoboxwide{
+	width:690px;
+	padding:0;
+	}
+
+.onebox,.oneboxwide{
+	float:right;	
+	width:318px;
+	margin:0;
+	padding:0;
+	background:url(images/bg_nav.png);
+	border-left:1px solid #fff;
+	border-right:1px solid #eee;
+	border-bottom:1px solid #eee;
+	}
+
+.oneboxwide{
+	width:340px;
+	padding:0;
+	}
+
+
+#bottombox .twobox,
+
+#bottombox .onebox{
+	border-right:none;
+	border-bottom:none;
+	}
+
+.hrline,.hrlineT,.hrlineB{
+
+
+
+
+
+
+
+	padding:0;
+
+
+
+
+
+
+
+	margin:0;
+
+
+
+
+
+
+
+	width:100%;
+
+
+
+
+
+
+
+	height:2px;
+
+
+
+
+
+
+
+	background:url(images/line-h.png) 0 0 repeat-x;
+
+
+
+
+
+
+
+	overflow:hidden;
+
+
+
+
+
+
+
+	clear:both;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hrlineT{ margin:30px 0 0 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hrlineB{ margin:0 0 30px 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1{
+
+	font-size:28pt;
+
+	line-height:30pt;
+
+	padding:5px 0;
+
+	margin:0;
+
+	letter-spacing:-1px;
+
+}
+
+
+
+
+
+h2{
+
+	font-family: "Times New Roman", TimesNewRomanPSMT, TimesNewRomanPS-ItalicMT, Times, serif !important;
+
+	font-weight: 500;
+
+	font-size:25pt;
+
+	line-height:28pt;
+
+	padding:5px 0;
+
+	margin:0;
+
+	letter-spacing:0px;
+
+}
+
+
+
+
+
+h3 {	font-size:13pt;
+
+	line-height:18pt;
+
+	padding:5px 0;
+
+	margin:0;
+
+	letter-spacing: 0px;
+
+}
+
+
+
+h3 span{color:#0061D8;}
+
+
+
+h3 span span{color:#FF1183;}
+
+
+
+h4 {
+
+	font-size:11pt;
+
+	line-height:20pt;
+
+	padding:5px 0;
+
+	font-weight:bold;
+
+	margin:0;
+
+	letter-spacing:-1px;
+
+}
+
+
+
+h5 {
+
+	font-size:11pt;
+
+	line-height:20pt;
+
+	padding:5px 0;
+
+	font-weight:bold;
+
+	margin:0;
+
+	letter-spacing:-1px;
+
+}
+
+
+
+h6 {
+
+	font-size:10pt;
+
+	line-height:18pt;
+
+	padding:5px 0;
+
+	margin:0;
+
+	letter-spacing:0px;
+
+}
+
+
+
+h7{	font-family: "Times New Roman", TimesNewRomanPSMT, TimesNewRomanPS-ItalicMT, Times, serif !important;	
+
+	font-size:18pt;
+
+	line-height:22pt;
+
+	padding:5px 0;
+
+	margin:0;
+
+	letter-spacing:0px;
+
+}
+
+
+
+.titleText{
+
+	font-family: "Times New Roman", TimesNewRomanPSMT, TimesNewRomanPS-ItalicMT, Times, serif !important;	
+
+	font-weight: 500;	
+
+	font-size:18pt;
+
+	line-height:22pt;
+
+	padding:5px 0;
+
+	margin:0;
+
+	letter-spacing:0px;
+
+}
+
+
+
+
+
+.bags{
+
+
+
+
+
+
+
+	padding:4px;
+
+
+
+
+
+
+
+	margin:1px 1px 5px 1px;
+
+
+
+
+
+
+
+	overflow:hidden;
+
+
+
+
+
+
+
+	-moz-border-radius: 4px;-khtml-border-radius: 4px;-webkit-border-radius: 4px;border-radius: 4px;
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+
+
+
+
+
+
+
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+
+
+
+
+
+
+
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+
+
+
+
+
+
+
+	-o-linear-gradient(#2F2727, #1a82f7);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    background: 
+
+
+
+
+
+
+
+	-moz-linear-gradient(center top , #FFFFFF, #EFEFEF) repeat scroll 0 0 transparent
+
+
+
+
+
+
+
+	;
+
+
+
+
+
+
+
+	background: -webkit-gradient(linear, left top, left bottom,
+
+
+
+
+
+
+
+				from(#fff),
+
+
+
+
+
+
+
+				color-stop(0.5, #fff),
+
+
+
+
+
+
+
+				to(#EFEFEF)
+
+
+
+
+
+
+
+				);
+
+
+
+
+
+
+
+	filter: progid: DXImageTransform.Microsoft.Gradient(StartColorStr='#ffffffff', EndColorStr='#EFEFEFEF');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffffff, endColorstr=#EFEFEFEF)";
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+	-o-linear-gradient(top, #dcdcdc, #c6c6c6);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    border: 1px solid #FFFFFF;
+
+
+
+
+
+
+
+	z-index:9;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.gallery-caption{}
+
+
+
+
+
+
+
+.sticky{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.boorder{ height:10px;
+
+
+
+
+
+
+
+	background-image:url(images/bg-slider.png);}
+
+.boorder .box{ height:10px; background:#831b3d }
+
+
+
+#header{
+
+	padding:0;
+
+	margin:0;
+
+	width:100%;
+
+	height:145px;
+
+	overflow:hidden;
+
+	border-bottom:1px solid #e5e5e5;
+
+}
+
+
+
+
+
+
+
+#header .box{
+
+	position:relative;
+
+	height:inherit;
+
+}
+
+
+
+
+
+
+
+#logo  { 
+
+	float:left;
+
+	width:700px;
+
+	margin:30px 0; }
+
+
+
+#logo img  { margin-top:0; }
+
+
+
+#headerbottom{
+
+	background:url(images/bg_nav.png);
+
+	border-top:1px solid #fff;
+
+	border-bottom:1px solid #eee;
+
+	overflow:hidden;
+
+	font:14px/14px georgia,serif;
+
+}
+
+
+
+#headerbottom .tagline{padding:11px 0; float:left}
+
+
+
+#navigation{ font-family:GillSansStd, GillSansStd-Bold, GillSansStd-Light, Arial, Helvetica, sans-serif; padding:0px; margin-top:0; width:850px;}
+
+#filter,#portfolio-filter{font:14px/14px GillSansStd, GillSansStd-Light, GillSansStd-Bold, Arial, Helvetica, sans-serif; border-bottom:0px solid #000;padding:0px; margin:-5px 0 -5px 0 !important;}
+
+.nav,#filter { z-index:99; margin:0; padding:0; list-style:none; line-height:1; float:right; }
+
+.nav a,.nav span  { position:relative;display:block; z-index:100; padding:11px 0 10px 20px; line-height:18px; text-decoration:none;}
+
+#portfolio-filter a,#portfolio-filter span {padding:11px 20px 10px 0;}
+
+.nav a:hover {}
+
+.nav li.current_page_item, .nav li.current_page_parent{}
+
+.nav li.current_page_item a:hover, .nav li.current_page_parent a:hover {}
+
+.nav a:hover, .nav li.current_page_item a, .nav li.current_page_parent a {}
+
+.nav li,#filter li  { float:left; width: auto; }
+
+.nav li a.sf-with-ul { padding-right:20px; }
+
+/* 2.2.1 Drop-down menus */
+
+.nav li ul  {position: absolute; left: -999em; width: 192px; z-index:999;
+
+	background:#fff url(images/bg_nav-2.png); padding:10px;}
+
+
+
+
+
+
+
+.nav li ul li  { background: none;background:#fff url(images/line-h.png) bottom repeat-x;}
+
+
+
+
+
+
+
+.nav li ul li a  { width:170px; color:#555; font-size:0.8em; font-style: none !important; }
+
+
+
+
+
+
+
+.nav li ul li a.sf-with-ul { padding:11px 0 10px 20px;}
+
+
+
+
+
+
+
+.nav li ul li a:hover  {}
+
+
+
+
+
+.nav li ul ul  { margin: -49px 0 0 190px; }
+
+
+
+
+
+
+
+.nav li ul ul li a  {  }
+
+
+
+
+
+
+
+.nav li ul li ul li a  {  }
+
+
+
+
+
+
+
+.nav li ul li a:hover, .nav li ul li.current_page_item, .nav li ul li.current_page_item a:hover, {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav li:hover,.nav li.hover  { position:static; }
+
+
+
+
+
+
+
+.nav li:hover ul ul, .nav li.sfhover ul ul,
+
+
+
+
+
+
+
+.nav li:hover ul ul ul, .nav li.sfhover ul ul ul,
+
+
+
+
+
+
+
+.nav li:hover ul ul ul ul, .nav li.sfhover ul ul ul ul { left:-999em; }
+
+
+
+
+
+
+
+.nav li:hover ul, .nav li.sfhover ul,
+
+
+
+
+
+
+
+.nav li li:hover ul, .nav li li.sfhover ul,
+
+
+
+
+
+
+
+.nav li li li:hover ul, .nav li li li.sfhover ul,
+
+
+
+
+
+
+
+.nav li li li li:hover ul, .nav li li li li.sfhover ul  { left:auto; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav .sf-sub-indicator {background:	url(images/arrow-superfish.png) no-repeat;position:absolute;display:block;right:0;top:1.3em;width:10px;height:10px;text-indent:-999em;overflow:hidden; padding:0;}
+
+
+
+
+
+
+
+.nav li ul .sf-sub-indicator {background:url(images/arrow-superfish-right.png) no-repeat;}
+
+
+
+
+
+.articleDivider{
+
+	border-top: 2px solid #993300;
+
+	width: 600px;
+
+	padding:10px;
+
+	margin:10px 10px 0 0;
+
+	}
+
+
+
+
+
+.indexpost{
+
+	height:230px;
+
+	width:268px;
+
+	background:#000;
+
+	margin:30px 30px 0 0;
+
+	float:left;
+
+	position:relative;
+
+	overflow:hidden;
+
+	padding:10px;
+
+	background:url(images/bg_nav-2.png);
+
+	border:1px solid #eee;
+
+}
+
+
+
+.indexpost h2{
+
+	color:#fff;
+
+	width:200px;
+
+	overflow:hidden;
+
+	padding:10px 30px;
+
+	line-height:23pt;
+
+	float:left;
+
+	margin:0;
+
+	position:absolute;
+
+	top:140px;
+
+	left:0;
+
+	background-image:url(images/bg-slider.png);
+
+	}
+
+
+
+.indexpost h2 a{
+
+	}
+
+
+
+.indexpost .titleText{
+
+	color:#fff;
+
+	width:200px;
+
+	overflow:hidden;
+
+	padding:10px 30px;
+
+	line-height:23pt;
+
+	float:left;
+
+	margin:0;
+
+	position:absolute;
+
+	top:140px;
+
+	left:0;
+
+	background-image:url(images/bg-slider.png);
+
+	}
+
+
+
+.indexpost .titleText a{
+
+	}
+
+
+
+.postinfo{
+
+	background:#fff;
+
+	color:#000;
+
+	padding:5px 30px;
+
+	float:left;
+
+	margin:0;
+
+	position:absolute;
+
+	height:10px;
+
+	top:120px;
+
+	left:0;
+
+	font-size:8pt;
+
+	line-height:10pt;
+
+	filter: alpha(opacity=80);
+
+	opacity: .80;
+
+	}
+
+
+
+.postinfo h8{
+
+	}
+
+
+
+.specialpost{
+
+
+
+
+
+
+
+	height:130px;	
+
+
+
+
+
+
+
+	width:610px;
+
+
+
+
+
+
+
+	float:left;
+
+
+
+
+
+
+
+	padding:30px 0 30px 0;
+
+
+
+
+
+
+
+	margin:0;
+
+
+
+
+
+
+
+	background:url(images/line-h.png) top repeat-x;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.specialpost img{
+
+
+
+
+
+
+
+	height:130px;
+
+
+
+
+
+
+
+	width:130px;
+
+
+
+
+
+
+
+	float:left;
+
+
+
+
+
+
+
+	margin:0 30px 30px 0;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.specialpost p{
+
+
+
+	
+
+	margin:0 0 10px 0;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#bottombox{
+
+
+
+
+
+
+
+	padding:0;
+
+
+
+
+
+
+
+	margin:0;
+
+
+
+
+
+
+
+	width:100%;
+
+
+
+
+
+
+
+	overflow:hidden;
+
+
+
+
+
+
+
+	background:url(images/line-h.png) top repeat-x;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#bottombox iframe{
+
+
+
+
+
+
+
+	padding:4px;
+
+
+
+
+
+
+
+	margin:0 0 30px 0;
+
+
+
+
+
+
+
+	background:url(images/texture-i.png);
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.indexpostsmall{
+
+
+
+
+
+
+
+	height:184px;
+
+
+
+
+
+
+
+	width:130px;
+
+
+
+
+
+
+
+	background:#000 url(images/enlarge.png) 50% 50% no-repeat;
+
+
+
+
+
+
+
+	margin:30px 30px 30px 0;
+
+
+
+
+
+
+
+	float:left;
+
+
+
+
+
+
+
+	position:relative;
+
+
+
+
+
+
+
+	overflow:hidden;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bread{
+
+
+
+
+
+
+
+	padding:30px 0;
+
+
+
+
+
+
+
+	background-image:url(images/bg-slider.png);
+
+
+
+
+
+
+
+	overflow:hidden;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bread h2{
+
+
+
+
+
+
+
+	width:500px;
+
+
+
+
+
+
+
+	float:left;
+
+
+
+
+
+
+
+	padding:0;
+
+
+
+
+
+
+
+	margin:0;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+.bread span{
+
+	float:right;
+
+	margin:0;
+
+	width:320px;
+
+	text-align:right;
+
+	}
+
+
+
+.post{
+
+	float:left;
+
+	overflow:hidden;
+
+	padding:30px 0;
+
+	width:610px;
+
+	}
+
+
+
+.post p{
+
+	/*text-indent:15px;*/
+
+	/*margin:10px 0 20px 0;*/
+
+	}
+
+
+
+.post p .noindent{
+
+	margin:10px 0 20px 0;
+
+	}
+
+
+
+.entry{margin:0px 0;}
+
+
+
+a.thumb img{
+
+	float:left;
+
+	margin:0 30px 5px 0;
+
+	padding:10px;
+
+	background:url(images/bg_nav-2.png);
+
+	border:1px solid #eee;
+
+	}
+
+
+
+/* services 
+
+
+
+
+
+
+
+********************************************************************************************
+
+
+
+
+
+
+
+********************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h2.title{
+
+
+
+	margin:50px 0 30px 0;
+
+	padding:30px 0 0 0;
+
+	font-size:22pt;
+
+	line-height:28pt;
+
+	color:#bbb;
+
+	text-align:center;
+
+	text-shadow:0 2px 3px #fff;
+
+	background:url(images/line-h.png) top repeat-x;
+
+	}
+
+
+
+h8.title{
+
+	margin:50px 0 30px 0;
+
+	padding:30px 0 0 0;
+
+	font-size:22pt;
+
+	line-height:28pt;
+
+	color:#bbb;
+
+	text-align:center;
+
+	text-shadow:0 2px 3px #fff;
+
+	background:url(images/line-h.png) top repeat-x;
+
+	}
+
+
+
+#services h8.title{
+
+	margin:10px 0 30px 0;
+
+	padding:0 0 15px 0;
+
+	font-size:22pt;
+
+	line-height:28pt;
+
+	color:#bbb;
+
+	text-align:center;
+
+	text-shadow:0 2px 3px #fff;
+
+	background:url(images/line-h.png) bottom repeat-x;
+
+	}	
+
+
+
+
+
+#services h2.title{
+
+
+
+
+
+
+
+	margin:10px 0 30px 0;
+
+
+
+
+
+
+
+	padding:0 0 15px 0;
+
+
+
+
+
+
+
+	font-size:22pt;
+
+
+
+
+
+
+
+	line-height:28pt;
+
+
+
+
+
+
+
+	color:#bbb;
+
+
+
+
+
+
+
+	text-align:center;
+
+
+
+
+
+
+
+	text-shadow:0 2px 3px #fff;
+
+
+
+
+
+
+
+	background:url(images/line-h.png) bottom repeat-x;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.serone,
+
+
+
+
+
+
+
+.sertwo,
+
+
+
+
+
+
+
+.serthree,
+
+
+
+
+
+
+
+.serfour,
+
+
+
+
+
+
+
+.serfive,
+
+
+
+
+
+
+
+.sersix
+
+
+
+
+
+
+
+{
+
+
+
+
+
+
+
+	float:left;	
+
+
+
+
+
+
+
+	width:230px;
+
+
+
+
+
+
+
+	margin:0;
+
+
+
+
+
+
+
+	padding:0 30px 30px 60px;
+
+
+
+
+
+
+
+	text-shadow:0 1px 2px #fff;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.serone{background:url(images/icons/ico-tailor.png) 0 0 no-repeat;} 
+
+
+
+
+
+
+
+.sertwo{background:url(images/icons/gear.png) 0 0 no-repeat;}
+
+
+
+
+
+
+
+.serthree{background:url(images/icons/info.png) 0 0 no-repeat;}
+
+
+
+
+
+
+
+.serfour{background:url(images/icons/database.png) 0 0 no-repeat;}
+
+
+
+
+
+
+
+.serfive{background:url(images/icons/globe.png) 0 0 no-repeat;}
+
+
+
+
+
+
+
+.sersix{background:url(images/icons/trash_full.png) 0 0 no-repeat;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#services h3{
+
+
+
+
+
+
+
+	font-weight:400;
+
+
+
+
+
+
+
+	margin:0;
+
+
+
+
+
+
+
+	padding:0 0 10px 0;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#services h3 a{
+
+
+
+
+
+
+
+	font-weight:400;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* portfolio 
+
+
+
+
+
+
+
+********************************************************************************************
+
+
+
+
+
+
+
+********************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#homefolio{
+
+
+
+
+
+
+
+	margin:0;
+
+
+
+
+
+
+
+	padding:0;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+#homefolio #portfolio-filter{
+
+
+
+
+
+
+
+	margin:17px 0 !important;
+
+
+
+
+
+
+
+	width:960px;
+
+
+
+
+
+
+
+	font-family:GillSansStd, GillSansStd-Light, GillSansStd-Bold, Georgia, "Times New Roman", Times, serif;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.infolio{
+
+
+
+
+
+
+
+	overflow:hidden;
+
+
+
+
+
+
+
+	margin-bottom:0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.indexitem{
+
+
+
+
+
+
+
+	width:300px;
+
+
+
+
+
+
+
+	height:200px;
+
+
+
+
+
+
+
+	margin:0;
+
+
+
+
+
+
+
+	float:left;
+
+
+
+
+
+
+
+	position:relative;
+
+
+
+
+
+
+
+	padding:0 30px 30px 0;
+
+
+
+
+
+
+
+	overflow:hidden;
+
+
+
+
+
+
+
+	background:url(images/enlarge.png) 45% 43% no-repeat;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.indexitem img{
+
+
+
+
+
+
+
+	margin:0px 0px 5px 0px;
+
+
+
+
+
+
+
+	overflow:hidden;
+
+
+
+
+
+
+
+	padding:10px;
+
+
+
+
+
+
+
+	background:url(images/bg_nav-2.png);
+
+
+
+
+
+
+
+	border:1px solid #eee;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.portfoliopost{
+
+
+
+
+
+
+
+	height:272px;
+
+
+
+
+
+
+
+	width:300px;
+
+
+
+
+
+
+
+	background: url(images/enlarge.png) 50% 50% no-repeat;
+
+
+
+
+
+
+
+	margin:0 30px 30px 0;
+
+
+
+
+
+
+
+	float:left;
+
+
+
+
+
+
+
+	position:relative;
+
+
+
+
+
+
+
+	overflow:hidden;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.portfoliopost img{
+
+
+
+
+
+
+
+	padding:10px;
+
+
+
+
+
+
+
+	background:url(images/bg_nav-2.png);
+
+
+
+
+
+
+
+	border:1px solid #eee;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.portfoliopost2{
+
+
+
+
+
+
+
+	height:272px;
+
+
+
+
+
+
+
+	width:465px;
+
+
+
+
+
+
+
+	background:url(images/enlarge.png) 50% 50% no-repeat;
+
+
+
+
+
+
+
+	margin:0 30px 30px 0;
+
+
+
+
+
+
+
+	float:left;
+
+
+
+
+
+
+
+	position:relative;
+
+
+
+
+
+
+
+	overflow:hidden;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.portfoliopost4{
+
+
+
+
+
+
+
+	height:250px;
+
+
+
+
+
+
+
+	width:217px;
+
+
+
+
+
+
+
+	background:url(images/enlarge.png) 50% 50% no-repeat;
+
+
+
+
+
+
+
+	margin:0 30px 30px 0;
+
+
+
+
+
+
+
+	float:left;
+
+
+
+
+
+
+
+	position:relative;
+
+
+
+
+
+
+
+	overflow:hidden;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.portfoliopost4 img,.portfoliopost2 img{
+
+
+
+
+
+
+
+	padding:10px;
+
+
+
+
+
+
+
+	background:url(images/bg_nav-2.png);
+
+
+
+
+
+
+
+	border:1px solid #eee;
+
+
+
+
+
+
+
+}
+
+
+
+.portfoliopost h8{
+
+	color:#fff;
+
+	width:180px;
+
+	overflow:hidden;
+
+	padding:10px 30px;
+
+	line-height:21pt;
+
+	float:left;
+
+	margin:0;
+
+	position:absolute;
+
+	top:150px;
+
+	left:0;
+
+	background-image:url(images/bg-slider.png);
+
+	}
+
+
+
+.portfoliopost2 h8{
+
+	color:#fff;
+
+	width:200px;
+
+	overflow:hidden;
+
+	padding:10px 30px;
+
+	line-height:21pt;
+
+	float:left;
+
+	margin:0;
+
+	position:absolute;
+
+	top:150px;
+
+	left:0;
+
+	background-image:url(images/bg-slider.png);
+
+	}
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+.portfoliopost4 h8{
+
+	color:#fff;
+
+	width:160px;
+
+	overflow:hidden;
+
+	padding:10px 30px;
+
+	line-height:21pt;
+
+	float:left;
+
+	margin:0;
+
+	position:absolute;
+
+	top:150px;
+
+	left:0;
+
+	background-image:url(images/bg-slider.png);
+
+	}
+
+
+
+.portfoliopost h2{
+
+
+
+
+
+
+
+	color:#fff;
+
+
+
+
+
+
+
+	width:180px;
+
+
+
+
+
+
+
+	overflow:hidden;
+
+
+
+
+
+
+
+	padding:10px 30px;
+
+
+
+
+
+
+
+	line-height:21pt;
+
+
+
+
+
+
+
+	float:left;
+
+
+
+
+
+
+
+	margin:0;
+
+
+
+
+
+
+
+	position:absolute;
+
+
+
+
+
+
+
+	top:150px;
+
+
+
+
+
+
+
+	left:0;
+
+
+
+
+
+
+
+	background-image:url(images/bg-slider.png);
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.portfoliopost2 h2{
+
+
+
+
+
+
+
+	color:#fff;
+
+
+
+
+
+
+
+	width:200px;
+
+
+
+
+
+
+
+	overflow:hidden;
+
+
+
+
+
+
+
+	padding:10px 30px;
+
+
+
+
+
+
+
+	line-height:21pt;
+
+
+
+
+
+
+
+	float:left;
+
+
+
+
+
+
+
+	margin:0;
+
+
+
+
+
+
+
+	position:absolute;
+
+
+
+
+
+
+
+	top:150px;
+
+
+
+
+
+
+
+	left:0;
+
+
+
+
+
+
+
+	background-image:url(images/bg-slider.png);
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+.portfoliopost4 h2{
+
+
+
+
+
+
+
+	color:#fff;
+
+
+
+
+
+
+
+	width:120px;
+
+
+
+
+
+
+
+	overflow:hidden;
+
+
+
+
+
+
+
+	padding:10px 30px;
+
+
+
+
+
+
+
+	line-height:21pt;
+
+
+
+
+
+
+
+	float:left;
+
+
+
+
+
+
+
+	margin:0;
+
+
+
+
+
+
+
+	position:absolute;
+
+
+
+
+
+
+
+	top:150px;
+
+
+
+
+
+
+
+	left:0;
+
+
+
+
+
+
+
+	background-image:url(images/bg-slider.png);
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.folioinfo{
+
+	color: black;
+
+	padding: 5px 30px;
+
+	float: left;
+
+	margin: 0;
+
+	position: absolute;
+
+	top: -255px;
+
+	left: 0;
+
+	background: white;
+
+	position: absolute;
+
+	height: 10px;
+
+	line-height: 10pt;
+
+	filter: alpha(opacity=80);
+
+	opacity: .80;
+
+	}
+
+
+
+
+
+.folioinfo a:link,.folioinfo a:visited{
+
+	color:#000;
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.project{
+
+
+
+
+
+
+
+	height:350px;
+
+
+
+
+
+
+
+	width:480px;
+
+
+
+
+
+
+
+	margin:0;
+
+
+
+
+
+
+
+	float:left;
+
+
+
+
+
+
+
+	position:relative;
+
+
+
+
+
+
+
+	overflow:hidden;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.projectstuff{
+
+
+
+
+
+
+
+	color:#000;
+
+
+
+
+
+
+
+	padding:30px;
+
+
+
+
+
+
+
+	float:left;
+
+
+
+
+
+
+
+	margin:0;
+
+
+
+
+
+
+
+	position:absolute;
+
+
+
+
+
+
+
+	height:310px;
+
+
+
+
+
+
+
+	width:420px;
+
+
+
+
+
+
+
+	overflow:hidden;
+
+
+
+
+
+
+
+	top:700px;
+
+
+
+
+
+
+
+	left:0;
+
+
+
+
+
+
+
+	background:#fff;
+
+
+
+
+
+
+
+	filter: alpha(opacity=85);
+
+
+
+
+
+
+
+	opacity: .85;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fullwidth{ width:960px; margin:30px auto 0 auto; padding:0 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fullwidth p{ margin:0 0 18pt 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* comments 
+
+
+
+
+
+
+
+********************************************************************************************
+
+
+
+
+
+
+
+********************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#comments{
+
+
+
+
+
+
+
+	width:610px;
+
+
+
+
+
+
+
+	margin:30px 0 0 0;
+
+
+
+
+
+
+
+	overflow:hidden;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+#comments li{
+
+
+
+
+
+
+
+	list-style:none;
+
+
+
+
+
+
+
+	padding:15px 0;
+
+
+
+
+
+
+
+	overflow:hidden;
+
+
+
+
+
+
+
+	margin:0 0 15px 0;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+#respond{
+
+
+
+
+
+
+
+	overflow:hidden;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a.comment-reply-link,a#cancel-comment-reply-link {
+
+
+
+
+
+
+
+	float:right;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.trackback .content,
+
+
+
+
+
+
+
+.pingback .content {
+
+
+
+
+
+
+
+	font-style: italic;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.commentmetadata{
+
+
+
+
+
+
+
+	background: url(images/line-h.png) bottom repeat-x; padding:5px 0; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.authorimg{
+
+
+
+
+
+
+
+	float:left;
+
+
+
+
+
+
+
+	margin:0;
+
+
+
+
+
+
+
+	padding:0;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#comments span{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cite {
+
+
+
+
+
+
+
+	font-weight: bold;
+
+
+
+
+
+
+
+	font-style: normal;
+
+
+
+
+
+
+
+	text-transform:uppercase;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+#comments ol{
+
+
+
+
+
+
+
+	margin:30px 0 0 0;
+
+
+
+
+
+
+
+	list-style:none;
+
+
+
+
+
+
+
+	padding:0;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+#comments ol.children{
+
+
+
+
+
+
+
+	padding:0 0 0 30px;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+#comments ol.children li{
+
+
+
+
+
+
+
+	margin:0;
+
+
+
+
+
+
+
+	overflow:hidden;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.children li,{
+
+
+
+
+
+
+
+	margin:0;
+
+
+
+
+
+
+
+	padding:0;
+
+
+
+
+
+
+
+	border: none;
+
+
+
+
+
+
+
+	padding-left: 5px;
+
+
+
+
+
+
+
+	list-style: none;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.children li ul {
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.comment-body{
+
+
+
+
+
+
+
+background:#fff url(images/corner.html) no-repeat 1px 1px;
+
+
+
+
+
+
+
+padding: 30px;
+
+
+
+
+
+
+
+margin-bottom: 10px;
+
+
+
+
+
+
+
+border:1px solid #f2f2f2;
+
+
+
+
+
+
+
+overflow:hidden;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.author-vcard{
+
+
+
+
+
+
+
+	float:left;
+
+
+
+
+
+
+
+	padding:5px;
+
+
+
+
+
+
+
+	background:url(images/texture-i.png);
+
+
+
+
+
+
+
+	margin:10px 15px 0 0 !important;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+.comment-body .vcard a{
+
+
+
+
+
+
+
+	font-weight: bold;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.comment-body .vcard img{
+
+
+
+
+
+
+
+	float: left; 
+
+
+
+
+
+
+
+	margin-right: 10px;
+
+
+
+
+
+
+
+	border: 3px solid #fff;
+
+
+
+
+
+
+
+	background-color:#fff;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.comment-body .commentmetadata{
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.comment-body .commentmetadata a{
+
+
+
+
+
+
+
+	color: #900;
+
+
+
+
+
+
+
+	font-size:10px
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.comment-body p{
+
+
+
+
+
+
+
+	clear: both;
+
+
+
+
+
+
+
+	margin: 30px 0;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .bypostauthor{
+
+
+
+
+
+
+
+	 font-weight:bold;
+
+
+
+
+
+
+
+	 font-style:italic;
+
+
+
+
+
+
+
+	color:#000;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* forms 
+
+
+
+
+
+
+
+********************************************************************************************
+
+
+
+
+
+
+
+********************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input, textarea,input checkbox,input radio,select, file{
+
+
+
+
+
+
+
+	border: 1px solid #eee;
+
+
+
+
+
+
+
+	padding:10px;
+
+
+
+
+
+
+
+	margin:0 10px 0 0;
+
+
+
+
+
+
+
+	float:left;
+
+
+
+
+
+
+
+	font-family:GillSansStd, GillSansStd-Light, GillSansStd-Bold, Arial, Helvetica, sans-serif;
+
+
+
+
+
+
+
+	font-weight:normal;
+
+
+
+
+
+
+
+	font-size:10pt;
+
+
+
+
+
+
+
+	-moz-border-radius: 5px;
+
+
+
+
+
+
+
+	-khtml-border-radius: 5px;
+
+
+
+
+
+
+
+	-webkit-border-radius: 5px;
+
+
+
+
+
+
+
+	border-radius: 5px;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+form#contactform fieldset input{
+
+
+
+
+
+
+
+	float:none;
+
+
+
+
+
+
+
+	width:320px;
+
+
+
+
+
+
+
+	margin-top:30px;}
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+form#contactform fieldset textarea{
+
+
+
+
+
+
+
+	width:580px;}
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+form#contactform fieldset input#submit{
+
+
+
+
+
+
+
+	width:150px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#submit{
+
+
+
+
+
+
+
+	background-image: -webkit-gradient(
+
+
+
+
+
+
+
+    linear,
+
+
+
+
+
+
+
+    left bottom,
+
+
+
+
+
+
+
+    left top,
+
+
+
+
+
+
+
+    color-stop(0.48, #BBBBBB),
+
+
+
+
+
+
+
+    color-stop(0.87, #DEDBDE)
+
+
+
+
+
+
+
+);
+
+
+
+
+
+
+
+background-image: -moz-linear-gradient(
+
+
+
+
+
+
+
+    center bottom,
+
+
+
+
+
+
+
+    #BBBBBB 48%,
+
+
+
+
+
+
+
+    #DEDBDE 87%
+
+
+
+
+
+
+
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	color:#666;
+
+
+
+
+
+
+
+	text-shadow:0 1px 2px #fff;
+
+
+
+
+
+
+
+	font-family:GillSansStd,GillSansStd-Light, GillSansStd-Bold, Arial, Helvetica, sans-serif;
+
+
+
+
+
+
+
+	font-weight:bold;
+
+
+
+
+
+
+
+	font-size:11pt;
+
+
+
+
+
+
+
+	-moz-border-radius: 5px;
+
+
+
+
+
+
+
+	-khtml-border-radius: 5px;
+
+
+
+
+
+
+
+	-webkit-border-radius: 5px;
+
+
+
+
+
+
+
+	border-radius: 5px;
+
+
+
+
+
+
+
+	cursor:pointer;
+
+
+
+
+
+
+
+	margin:0;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+label{ font-style: italic; float:left;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#contact{
+
+
+
+
+
+
+
+	padding:0 0 30px 0;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sidebar 
+
+
+
+
+
+
+
+********************************************************************************************
+
+
+
+
+
+
+
+********************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#sidebar {
+
+
+
+
+
+
+
+	font-size:10pt;
+
+
+
+
+
+
+
+	float:right;
+
+
+
+
+
+
+
+	margin:0;
+
+
+
+
+
+
+
+	padding:30px 30px 0 30px;
+
+
+
+
+
+
+
+	width:260px;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#sidebar h2{
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#sidebar h3 {
+
+
+
+
+
+
+
+	font-size:13pt;
+
+
+
+
+
+
+
+	font-weight:bold;
+
+
+
+
+
+
+
+	line-height:18pt;
+
+
+
+
+
+
+
+	margin: 0 0 5px 0; 
+
+
+
+
+
+
+
+	padding:0 0 10px 0;
+
+
+
+
+
+
+
+	color:#000;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#sidebar p {margin:0; padding:0 0 20px 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+#sidebar a:hover {
+
+
+
+
+
+
+
+	text-decoration:none;
+
+
+
+
+
+
+
+	}	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#sidebar ul{
+
+
+
+
+
+
+
+	margin:0;
+
+
+
+
+
+
+
+	padding:0;
+
+
+
+
+
+
+
+	list-style:none;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#sidebar li ul{
+
+
+
+
+
+
+
+	margin:0 0 0 15px;
+
+
+
+
+
+
+
+	padding:0;
+
+
+
+
+
+
+
+	list-style:none;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+#sidebar iframe{
+
+
+
+
+
+
+
+	margin:30px 0 30px 0;
+
+
+
+
+
+
+
+	padding:0;
+
+
+
+
+
+
+
+	border:7px solid #fff;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* custom widgets 
+
+
+
+
+
+
+
+********************************************************************************************
+
+
+
+
+
+
+
+********************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.adspace-widget img{
+
+
+
+
+
+
+
+	float:left;
+
+
+
+
+
+
+
+	border:none;
+
+
+
+
+
+
+
+	overflow:hidden;
+
+
+
+
+
+
+
+	margin:0 0 30px -1px;
+
+
+
+
+
+
+
+	padding: 3px;
+
+
+
+
+
+
+
+	width:250px;
+
+
+
+
+
+
+
+	height:auto;
+
+
+
+
+
+
+
+	background:url(images/texture-i.png);
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.adspace-widget125 img{
+
+
+
+
+
+
+
+	float:left;
+
+
+
+
+
+
+
+	border:none;
+
+
+
+
+
+
+
+	overflow:hidden;
+
+
+
+
+
+
+
+	margin:0 0 30px 0; 
+
+
+
+
+
+
+
+	padding: 2px;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+.adspace-widget img:hover,.adspace-widget125 img:hover{
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* twitter  */
+
+
+
+
+
+
+
+.lasttwit{
+
+
+
+
+
+
+
+	padding:65px 0 0 10px;
+
+
+
+
+
+
+
+	position:relative;
+
+
+
+
+
+
+
+	margin:0 0 30px 0;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+a.twilink{ 
+
+
+
+
+
+
+
+	position:absolute;
+
+
+
+
+
+
+
+	top:25px;
+
+
+
+
+
+
+
+	left:0px;
+
+
+
+
+
+
+
+	font-size:12pt;
+
+
+
+
+
+
+
+	letter-spacing:-1px;
+
+
+
+
+
+
+
+	font-weight:bold;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+.lasttwit a{
+
+
+
+
+
+
+
+	color:#666 !important;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+.lasttwit ul li,#footer .lasttwit ul li{
+
+
+
+
+
+
+
+	list-style-image:url(images/ico-bird.png);
+
+
+
+
+
+
+
+	margin:0 0 10px 15px;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+.view-twitter{ padding:0; font-size:8pt; clear:both;}
+
+
+
+
+
+
+
+.tweet_avatar{ float:right;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer-widgets { border-top:1px solid #e6e6e6; padding:10px 0; }
+
+
+
+
+
+
+
+#footer-widgets .block { padding:20px 0 0 20px; width:210px; float:left; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* flickr */
+
+
+
+
+
+
+
+.flickwrap h3  {}
+
+
+
+
+
+
+
+#sidebar h3 span{color:#0061D8;}
+
+
+
+
+
+
+
+#sidebar h3 span span{color:#FF1183;}
+
+
+
+
+
+
+
+.flickr_badge_image  { float: left; margin:0; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.flickwrap  { position: relative; margin-bottom: 20px; padding: 0; overflow:hidden; width:108%;}
+
+
+
+
+
+
+
+.flickwrap a img  { float: left;  margin: 0 15px 15px 2px;  display: block; border: #ddd 1px solid; padding: 2px; background-color: #eee; width:70px; height:70px}
+
+
+
+
+
+
+
+.flickwrap a:hover img  { border:#fff 1px solid; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Blog Author Widget */
+
+
+
+
+
+
+
+img.avatar { }
+
+
+
+
+
+
+
+span.left { float:left; margin:0 15px 5px 0; }
+
+
+
+
+
+
+
+span.right { float:right; margin:0 0 5px 15px; }
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+/* featured */
+
+
+
+
+
+
+
+#featured{
+
+
+
+
+
+
+
+	margin:0 0 30px 0;
+
+
+
+
+
+
+
+	overflow:hidden;
+
+
+
+
+
+
+
+	float:left;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fblock{
+
+
+
+
+
+
+
+	font-weight:normal;
+
+
+
+
+
+
+
+	padding:0;
+
+
+
+
+
+
+
+	line-height:17pt;
+
+
+
+
+
+
+
+	margin:0 0 15px 0;
+
+
+
+
+
+
+
+	overflow:hidden;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fblock img{
+
+
+
+
+
+
+
+	float:left;
+
+
+
+
+
+
+
+	width:75px;
+
+
+
+
+
+
+
+	height:75px;
+
+
+
+
+
+
+
+	margin:8px 15px 2px 0;
+
+
+
+
+
+
+
+	padding: 3px; 
+
+
+
+
+
+
+
+	background:url(images/texture-i.png);
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+#sidebar ul li.fblock h3,#footer ul li.fblock h3{
+
+
+
+
+
+
+
+	text-transform:none !important;
+
+
+
+
+
+
+
+	font-weight:bold;
+
+
+
+
+
+
+
+	font-family:GillSansStd, GillSansStd-Light, GillSansStd-Bold, 'Arial', Helvetica, sans-serif;
+
+
+
+
+
+
+
+	font-size:12pt;
+
+
+
+
+
+
+
+	padding:0;
+
+
+
+
+
+
+
+	margin:0 0 10px 0;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+#footer ul li.fblock h3{
+
+
+
+
+
+
+
+	background: none;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------- BEGIN Custom Mail Form SJB ---------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.emailform{
+
+
+
+	position:relative;
+
+
+
+	float:left;
+
+
+
+	border:1px solid #e5e5e5;
+
+
+
+	background-image: -webkit-gradient(
+
+
+
+    	linear,
+
+
+
+    	left bottom,
+
+
+
+    	left top,
+
+
+
+    	color-stop(0.13, #fff),
+
+
+
+    	color-stop(0.87, #eee)
+
+
+
+	);
+
+
+
+	background-image: -moz-linear-gradient(
+
+
+
+    	center bottom,
+
+
+
+    	#fff 13%,
+
+
+
+    	#eee 87%
+
+
+
+);
+
+
+
+	margin:0 0 0px 0;
+
+
+
+	padding:5px 10px;
+
+
+
+	color:#222;
+
+
+
+	width:240px;
+
+
+
+	height:24px;
+
+
+
+	font-family:GillSansStd, GillSansStd-Light, GillSansStd-Bold, Arial, Helvetica, sans-serif;
+
+
+
+	text-shadow: 0px 1px 2px #fff;
+
+
+
+	-moz-border-radius:0px;
+
+
+
+	-khtml-border-radius:0px;
+
+
+
+	-webkit-border-radius:0px;
+
+
+
+	border-radius:0px;
+
+
+
+	}
+
+
+
+
+
+
+
+#esubmit{
+
+	border:none;
+
+	display: inline;
+
+	float: right;
+
+	background-image: -webkit-gradient(
+
+    	linear,
+
+    	left bottom,
+
+    	left top,
+
+    	color-stop(0.48, #BBBBBB),
+
+    	color-stop(0.87, #DEDBDE)
+
+);
+
+	background-image: -moz-linear-gradient(
+
+    	center bottom,
+
+   	#BBBBBB 48%,
+
+    	#DEDBDE 87%
+
+);
+
+	color:#666;
+
+	text-shadow:0 1px 2px #fff;
+
+	position:relative;
+
+	height:29px;
+
+	cursor:pointer;
+
+	margin:-32px 0 0 0px;
+
+	-moz-margin-start:-64px 0px 0px -55px;
+
+	-moz-margin:-0px 0px 0px -55px; 
+
+	
+
+	-webkit-margin:-75px 0px 0px -55px;
+
+	font-family:GillSansStd, GillSansStd-Light, GillSansStd-Bold, Arial, Helvetica, sans-serif;
+
+	line-height:0;
+
+	font-weight:bold;
+
+	font-size:11pt;
+
+	padding:5px 10px;
+
+	-moz-border-radius:0px;
+
+	-khtml-border-radius:0px;
+
+	-webkit-border-radius:0px;
+
+	border-radius:0px;
+
+	}
+
+
+
+/*------- END Custom Mail Form SJB ---------*/
+
+
+
+
+
+
+
+/* search 
+
+
+
+
+
+
+
+********************************************************************************************
+
+
+
+
+
+
+
+********************************************************************************************/
+
+
+
+
+
+
+
+.searchformhead{
+
+
+
+
+
+
+
+	position:relative;
+
+
+
+
+
+
+
+	float:left;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.searchformhead input.s{
+
+
+
+
+
+
+
+	border:1px solid #e5e5e5;
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+	background-image: -webkit-gradient(
+
+
+
+
+
+
+
+    linear,
+
+
+
+
+
+
+
+    left bottom,
+
+
+
+
+
+
+
+    left top,
+
+
+
+
+
+
+
+    color-stop(0.13, #fff),
+
+
+
+
+
+
+
+    color-stop(0.87, #eee)
+
+
+
+
+
+
+
+);
+
+
+
+
+
+
+
+background-image: -moz-linear-gradient(
+
+
+
+
+
+
+
+    center bottom,
+
+
+
+
+
+
+
+    #fff 13%,
+
+
+
+
+
+
+
+    #eee 87%
+
+
+
+
+
+
+
+);
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+	float:left;
+
+
+
+
+
+
+
+	margin:0 0 30px 0;
+
+
+
+
+
+
+
+	padding:5px 10px;
+
+
+
+
+
+
+
+	color:#222;
+
+
+
+
+
+
+
+	width:240px;
+
+
+
+
+
+
+
+	height:23px;
+
+
+
+
+
+
+
+	font-family:GillSansStd, GillSansStd-Light, GillSansStd-Bold, Arial, Helvetica, sans-serif;
+
+
+
+
+
+
+
+	text-shadow: 0px 1px 2px #fff;
+
+
+
+
+
+
+
+	-moz-border-radius:0px;
+
+
+
+
+
+
+
+	-khtml-border-radius:0px;
+
+
+
+
+
+
+
+	-webkit-border-radius:0px;
+
+
+
+
+
+
+
+	border-radius:0px;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.searchSubmit{
+
+
+
+
+
+
+
+	border:none;
+
+
+
+
+
+
+
+	background-image: -webkit-gradient(
+
+
+
+
+
+
+
+    linear,
+
+
+
+
+
+
+
+    left bottom,
+
+
+
+
+
+
+
+    left top,
+
+
+
+
+
+
+
+    color-stop(0.48, #BBBBBB),
+
+
+
+
+
+
+
+    color-stop(0.87, #DEDBDE)
+
+
+
+
+
+
+
+);
+
+
+
+
+
+
+
+background-image: -moz-linear-gradient(
+
+
+
+
+
+
+
+    center bottom,
+
+
+
+
+
+
+
+    #BBBBBB 48%,
+
+
+
+
+
+
+
+    #DEDBDE 87%
+
+
+
+
+
+
+
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	color:#666;
+
+
+
+
+
+
+
+	text-shadow:0 1px 2px #fff;
+
+
+
+
+
+
+
+	position:absolute;
+
+
+
+
+
+
+
+	height:29px;
+
+
+
+
+
+
+
+	cursor:pointer;
+
+
+
+
+
+
+
+	top:3px;
+
+
+
+
+
+
+
+	right:-7px;
+
+
+
+
+
+
+
+	font-family:GillSansStd, GillSansStd-Light, GillSansStd-Bold, Arial, Helvetica, sans-serif;
+
+
+
+
+
+
+
+	line-height:0;
+
+
+
+
+
+
+
+	font-weight:bold;
+
+
+
+
+
+
+
+	font-size:11pt;
+
+
+
+
+
+
+
+	padding:5px 10px;
+
+
+
+
+
+
+
+	-moz-border-radius:0px;
+
+
+
+
+
+
+
+	-khtml-border-radius:0px;
+
+
+
+
+
+
+
+	-webkit-border-radius:0px;
+
+
+
+
+
+
+
+	border-radius:0px;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+/* footer
+
+
+
+
+
+
+
+********************************************************************************************
+
+
+
+
+
+
+
+********************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer{
+
+
+
+
+
+
+
+	padding:30px 0 0 0;
+
+
+
+
+
+
+
+	margin:0;
+
+
+
+
+
+
+
+	font-size:8pt;
+
+
+
+
+
+
+
+	width:100%;
+
+
+
+
+
+
+
+	overflow:hidden;
+
+
+
+
+
+
+
+	background-image:url(images/bg-slider.png);
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer h3{
+
+
+
+
+
+
+
+	margin:0 0 5px 0;
+
+
+
+
+
+
+
+	padding:0 0 10px 0;
+
+
+
+
+
+
+
+	line-height:13pt;
+
+
+
+
+
+
+
+	background:url(images/line-header.png) bottom repeat-x;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+.foowidget{
+
+
+
+
+
+
+
+	float:left;
+
+
+
+
+
+
+
+	width:130px;
+
+
+
+
+
+
+
+	padding:0 30px 0 0;
+
+
+
+
+
+
+
+	overflow:hidden;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+.foowidget2{
+
+
+
+
+
+
+
+	float:right;
+
+
+
+
+
+
+
+	width:320px;
+
+
+
+
+
+
+
+	padding:0;
+
+
+
+
+
+
+
+	overflow:hidden;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer ul {
+
+
+
+
+
+
+
+	margin:0 0 30px 0;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+#footer ul li ul{
+
+
+
+
+
+
+
+	margin:0;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer .flickwrap {
+
+
+
+
+
+
+
+	width:103%;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer .flickwrap a img{
+
+
+
+
+
+
+
+	width:60px;
+
+
+
+
+
+
+
+	height:60px;
+
+
+
+
+
+
+
+	margin:10px 15px 5px 0;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#credit,#copyright{
+
+
+
+
+
+
+
+	margin:0;
+
+
+
+
+
+
+
+	width:480px;
+
+
+
+
+
+
+
+	padding:10px 0;
+
+
+
+
+
+
+
+	background:url(images/line-header.png) top repeat-x;}	
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+#credit p,#copyright p{
+
+
+
+
+
+
+
+	margin:0;
+
+
+
+
+
+
+
+	padding:5px 0;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+#credit{
+
+
+
+
+
+
+
+	text-align:right;}
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+/* slider 1 
+
+
+
+
+
+
+
+********************************************************************************************
+
+
+
+
+
+
+
+********************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#sliderwrap{
+
+
+
+
+
+
+
+	margin:0;
+
+
+
+
+
+
+
+	padding:0;
+
+
+
+
+
+
+
+	overflow:hidden;
+
+
+
+
+
+
+
+	background-image:url(images/bg-slider.png);
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.lof-slidecontent{
+
+
+
+
+
+
+
+	color:#FFF;	
+
+
+
+
+
+
+
+	float:left;
+
+
+
+
+
+
+
+	text-decoration:none;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.lof-slidecontent a {
+
+
+
+
+
+
+
+	color:#FFF !important;	
+
+
+
+
+
+
+
+	text-decoration:none;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.lof-slidecontent a.readmore{
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.lof-slidecontent{
+
+
+
+
+
+
+
+	position:relative;
+
+
+
+
+
+
+
+	overflow:hidden;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.lof-slidecontent .preload{
+
+
+
+
+
+
+
+	height:100%;
+
+
+
+
+
+
+
+	width:100%;
+
+
+
+
+
+
+
+	position:absolute;
+
+
+
+
+
+
+
+	top:0;
+
+
+
+
+
+
+
+	left:0;
+
+
+
+
+
+
+
+	z-index:100000;
+
+
+
+
+
+
+
+	text-align:center;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.lof-slidecontent .preload div{
+
+
+
+
+
+
+
+	height:100%;
+
+
+
+
+
+
+
+	width:100%;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.lof-main-outer{
+
+
+
+
+
+
+
+	position:relative;
+
+
+
+
+
+
+
+	height:100%;
+
+
+
+
+
+
+
+	width:900px;
+
+
+
+
+
+
+
+	z-index:3px;
+
+
+
+
+
+
+
+	overflow:hidden;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******************************************************/
+
+
+
+
+
+
+
+.lof-main-item-desc{
+
+
+
+
+
+
+
+	z-index:100px;
+
+
+
+
+
+
+
+	position:absolute;
+
+
+
+
+
+
+
+	bottom:100px;
+
+
+
+
+
+
+
+	left:0px;
+
+
+
+
+
+
+
+	width:230px;
+
+
+
+
+
+
+
+	background:url(images/bg_trans.png);
+
+
+
+
+
+
+
+	filter:0.7(opacity:70);
+
+
+
+
+
+
+
+	padding:30px;
+
+
+
+
+
+
+
+	opacity:0;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.lof-main-item-desc h2,..lof-main-item-desc ss{
+
+
+
+
+
+
+
+	margin:0;
+
+
+
+
+
+
+
+	padding:0;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* main flash */
+
+
+
+
+
+
+
+ul.lof-main-wapper{
+
+
+
+
+
+
+
+	/* margin-right:auto; */
+
+
+
+
+
+
+
+	overflow:hidden;
+
+
+
+
+
+
+
+	background:transparent url(images/load-indicator.gif) no-repeat scroll 50% 50%;
+
+
+
+
+
+
+
+	padding:0px;
+
+
+
+
+
+
+
+	margin:0;
+
+
+
+
+
+
+
+	position:absolute;
+
+
+
+
+
+
+
+	overflow:hidden;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ul.lof-main-wapper li{
+
+
+
+
+
+
+
+	overflow:hidden;
+
+
+
+
+
+
+
+	width:960px;
+
+
+
+
+
+
+
+	height:340px;
+
+
+
+
+
+
+
+	padding:0px;
+
+
+
+
+
+
+
+	margin:0px;
+
+
+
+
+
+
+
+	float:left;
+
+
+
+
+
+
+
+	position:relative;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.lof-opacity {
+
+
+
+
+
+
+
+	overflow:visible  !important;;
+
+
+
+
+
+
+
+	position:absolute !important;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.lof-opacity  li{
+
+
+
+
+
+
+
+	position:absolute  !important;;
+
+
+
+
+
+
+
+	top:0;
+
+
+
+
+
+
+
+	left:0;
+
+
+
+
+
+
+
+	float:inherit  !important;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+ul.lof-main-wapper li img{
+
+
+
+
+
+
+
+	padding:0px;
+
+
+
+
+
+
+
+	width:960px;	
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* item navigator */
+
+
+
+
+
+
+
+.lof-navigator-wapper {
+
+
+
+
+
+
+
+	position:absolute;
+
+
+
+
+
+
+
+	bottom:30px;
+
+
+
+
+
+
+
+	right:30px;
+
+
+
+
+
+
+
+	padding:15px 20px;
+
+
+
+
+
+
+
+	filter:0.7(opacity:70);
+
+
+
+
+
+
+
+	background-image:url(images/bg-slider.png);
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.lof-navigator-outer{
+
+
+
+
+
+
+
+	position:relative;
+
+
+
+
+
+
+
+	z-index:100;
+
+
+
+
+
+
+
+	height:15px;
+
+
+
+
+
+
+
+	width:80px;
+
+
+
+
+
+
+
+	overflow:hidden;
+
+
+
+
+
+
+
+	color:#FFF;
+
+
+
+
+
+
+
+	float:left
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+ul.lof-navigator{
+
+
+
+
+
+
+
+	top:0;
+
+
+
+
+
+
+
+	padding:0;
+
+
+
+
+
+
+
+	margin:0;
+
+
+
+
+
+
+
+	position:absolute;
+
+
+
+
+
+
+
+	width:100%;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+ul.lof-navigator li{
+
+
+
+
+
+
+
+	cursor:hand; 
+
+
+
+
+
+
+
+	cursor:pointer;
+
+
+
+
+
+
+
+	list-style:none;
+
+
+
+
+
+
+
+	line-height:14pt;
+
+
+
+
+
+
+
+	padding:0;
+
+
+
+
+
+
+
+	margin-left:0px;
+
+
+
+
+
+
+
+	overflow:hidden;
+
+
+
+
+
+
+
+	float:left;
+
+
+
+
+
+
+
+	display:block;
+
+
+
+
+
+
+
+	text-align:center;
+
+
+
+
+
+
+
+	background:url(images/bulett.png) 0 0 no-repeat;
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+ul.lof-navigator li.active , ul.lof-navigator li:hover  {
+
+
+
+
+
+
+
+	display:block;
+
+
+
+
+
+
+
+	background:url(images/bullet-active.png) 0 0 no-repeat;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ul.lof-navigator li:hover  {
+
+
+
+
+
+
+
+	display:block;
+
+
+
+
+
+
+
+	background:url(images/bullet-hover.png) 0 0 no-repeat;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* slider 2 - Nivo Slider
+
+
+
+
+
+
+
+********************************************************************************************
+
+
+
+
+
+
+
+********************************************************************************************/ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+.nivoSlider {
+
+
+
+
+
+
+
+	position:relative;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.nivoSlider img {
+
+
+
+
+
+
+
+	position:absolute;
+
+
+
+
+
+
+
+	top:0px;
+
+
+
+
+
+
+
+	left:0px;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+/* If an image is wrapped in a link */
+
+
+
+
+
+
+
+.nivoSlider a.nivo-imageLink {
+
+
+
+
+
+
+
+	position:absolute;
+
+
+
+
+
+
+
+	top:0px;
+
+
+
+
+
+
+
+	left:0px;
+
+
+
+
+
+
+
+	width:100%;
+
+
+
+
+
+
+
+	height:100%;
+
+
+
+
+
+
+
+	border:0;
+
+
+
+
+
+
+
+	padding:0;
+
+
+
+
+
+
+
+	margin:0;
+
+
+
+
+
+
+
+	z-index:60;
+
+
+
+
+
+
+
+	display:none;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+/* The slices in the Slider */
+
+
+
+
+
+
+
+.nivo-slice {
+
+
+
+
+
+
+
+	display:block;
+
+
+
+
+
+
+
+	position:absolute;
+
+
+
+
+
+
+
+	z-index:50;
+
+
+
+
+
+
+
+	height:100%;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+/* Direction nav styles (e.g. Next & Prev) */
+
+
+
+
+
+
+
+.nivo-directionNav a {
+
+
+
+
+
+
+
+	position:absolute;
+
+
+
+
+
+
+
+	top:43%;
+
+
+
+
+
+
+
+	z-index:99;
+
+
+
+
+
+
+
+	cursor:pointer;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.nivo-prevNav {
+
+
+
+
+
+
+
+	left:0px;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.nivo-nextNav {
+
+
+
+
+
+
+
+	right:0px;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+/* Control nav styles (e.g. 1,2,3...) */
+
+
+
+
+
+
+
+.nivo-controlNav a {
+
+
+
+
+
+
+
+	position:relative;
+
+
+
+
+
+
+
+	z-index:99;
+
+
+
+
+
+
+
+	cursor:pointer;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.nivo-controlNav a.active {
+
+
+
+
+
+
+
+	font-weight:bold;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#sliderwrapper {
+
+
+
+
+
+
+
+margin:40px 0;
+
+
+
+
+
+
+
+position: relative;
+
+
+
+
+
+
+
+height: 340px;
+
+
+
+
+
+
+
+width: 958px;
+
+
+
+
+
+
+
+overflow:hidden;
+
+
+
+
+
+
+
+border:1px solid #777;
+
+
+
+
+
+
+
+	-moz-box-shadow:0px 3px 7px #333;
+
+
+
+
+
+
+
+	-webkit-box-shadow:0px 3px 7px #333;
+
+
+
+
+
+
+
+	box-shadow:0px 3px 7px #333;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#slider {
+
+
+
+
+
+
+
+	position:absolute;
+
+
+
+
+
+
+
+	top:0;
+
+
+
+
+
+
+
+	width: 960px !important;
+
+
+
+
+
+
+
+	height: 340px !important;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#slider a{
+
+
+
+
+
+
+
+	border:none;
+
+
+
+
+
+
+
+	display:block;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nivo-controlNav {
+
+
+
+
+
+
+
+	position:absolute;
+
+
+
+
+
+
+
+	right:45%;
+
+
+
+
+
+
+
+	bottom:-5px;
+
+
+
+
+
+
+
+	padding:8px 0 13px 10px;
+
+
+
+
+
+
+
+	background: #fff;
+
+
+
+
+
+
+
+	opacity: 0.4;
+
+
+
+
+
+
+
+	filter:alpha(opacity=40);
+
+
+
+
+
+
+
+	-moz-border-radius: 5px;
+
+
+
+
+
+
+
+	-webkit-border-radius:5px;
+
+
+
+
+
+
+
+	border-radius:5px;
+
+
+
+
+
+
+
+	z-index: 999;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.nivo-controlNav a {
+
+
+
+
+
+
+
+	display:block;
+
+
+
+
+
+
+
+	width:11px;
+
+
+
+
+
+
+
+	height:11px;
+
+
+
+
+
+
+
+	background:url(images/bullets.png) no-repeat;
+
+
+
+
+
+
+
+	text-indent:-9999px;
+
+
+
+
+
+
+
+	border:0;
+
+
+
+
+
+
+
+	margin-right:10px;
+
+
+
+
+
+
+
+	float:left;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.nivo-controlNav a.active {
+
+
+
+
+
+
+
+	background-position:0 -11px;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nivo-directionNav a {
+
+
+
+
+
+
+
+	display:block;
+
+
+
+
+
+
+
+	width:40px;
+
+
+
+
+
+
+
+	height:40px;
+
+
+
+
+
+
+
+	text-indent:-9999px;
+
+
+
+
+
+
+
+	border:0;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+a.nivo-nextNav {
+
+
+
+
+
+
+
+	background:url(images/slide_right.png) no-repeat;
+
+
+
+
+
+
+
+	right:30px;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+a.nivo-prevNav {
+
+
+
+
+
+
+
+	left:30px;
+
+
+
+
+
+
+
+	background:url(images/slide_left.png) no-repeat;
+
+
+
+
+
+
+
+}	
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* misc */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+img.centered {
+
+
+
+
+
+
+
+	display: block;
+
+
+
+
+
+
+
+	margin-left: auto;
+
+
+
+
+
+
+
+	margin-right: auto;
+
+
+
+
+
+
+
+	border: 4px solid #fff;
+
+
+
+
+
+
+
+	background: #fff url(images/texture-i.png);
+
+
+
+
+
+
+
+	-moz-box-shadow:0px 1px 3px #ccc;
+
+
+
+
+
+
+
+	-webkit-box-shadow:0px 1px 3px #ccc;
+
+
+
+
+
+
+
+	box-shadow:0px 1px 3px #ccc;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+img.alignright {
+
+
+
+
+
+
+
+	padding:4px;
+
+
+
+
+
+
+
+	margin: 0 0 10px 30px;
+
+
+
+
+
+
+
+	display: inline;
+
+
+
+
+
+
+
+	background: #fff url(images/texture-i.png);
+
+
+
+
+
+
+
+	-moz-box-shadow:0px 1px 3px #ccc;
+
+
+
+
+
+
+
+	-webkit-box-shadow:0px 1px 3px #ccc;
+
+
+
+
+
+
+
+	box-shadow:0px 1px 3px #ccc;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+img.alignleft {
+
+
+
+
+
+
+
+	padding:4px;
+
+
+
+
+
+
+
+	margin: 0 30px 10px 0;
+
+
+
+
+
+
+
+	display: inline;
+
+
+
+
+
+
+
+	background: #fff url(images/texture-i.png);
+
+
+
+
+
+
+
+	-moz-box-shadow:0px 1px 3px #ccc;
+
+
+
+
+
+
+
+	-webkit-box-shadow:0px 1px 3px #ccc;
+
+
+
+
+
+
+
+	box-shadow:0px 1px 3px #ccc;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.alignright {
+
+
+
+
+
+
+
+	float: right;
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.alignleft {
+
+
+
+
+
+
+
+	float: left
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.aligncenter {
+
+
+
+
+
+
+
+	display: block;
+
+
+
+
+
+
+
+	margin-left: auto;
+
+
+
+
+
+
+
+	margin-right: auto;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.alignleft {
+
+
+
+
+
+
+
+	float: left;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.alignright {
+
+
+
+
+
+
+
+	float: right;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+.wp-caption {
+
+   border: 1px solid #ddd;
+
+
+
+   text-align: center;
+
+
+
+   background-color: #f3f3f3;
+
+
+
+   padding-top: 4px;
+
+
+
+   margin: 15px;
+
+
+
+   /* optional rounded corners for browsers that support it */
+
+
+
+   -moz-border-radius: 3px;
+
+
+
+   -khtml-border-radius: 3px;
+
+
+
+   -webkit-border-radius: 3px;
+
+
+
+   border-radius: 3px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wp-caption img {
+
+	margin: 0;
+
+   	padding: 0;
+
+   	border: 0 none;
+
+}
+
+
+
+.wp-caption p.wp-caption-text {
+
+   	font-size: 12px;
+
+   	padding: 2px 4px 0px;
+
+  	margin: 5px 5px ;
+
+	text-align: left;
+
+	line-height: 110%;
+
+}
+
+
+
+.tooltip {
+	-moz-border-radius:4px;
+	-khtml-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	background:url(images/bg-box.png) 0 -1px repeat-x;
+	display: none;
+	position: absolute;
+	font-size:10pt;
+	padding: 10px 15px;
+}
+
+.navigation{
+	width:610px;
+	margin:30px 0;
+	padding:0;
+	overflow:hidden;
+	/*display: none;*/
+	}
+
+.navigation a,.wp-pagenavi a,.wp-pagenavi span.current{
+	font-size:12pt;
+	padding:0;
+	margin:30px 0;
+	margin-right:10px;
+	font-weight:bold;
+	}
+
+.wp-pagenavi span.current{
+	color:#999;
+	}
+/* social
+**************/
+
+ul#social-menu { width:320px; height:20px;  display:inline; float:right; position:absolute; right:0; top:50%; overflow:hidden; padding:0; margin:-10px 0 0 0; }
+
+ul#social-menu li { display: inline; list-style-type: none; position: relative; float:right; width:20px;height:20px;margin:0 0 0 3px; background-image:url(images/social-sprite.png); background-repeat:no-repeat; }
+li.socials_fa {background-position: 0 -20px;} li.socials_fa:hover {background-position: 0 0;}
+li.socials_tw {background-position: 0 -60px;} li.socials_tw:hover {background-position: 0 -40px;}
+li.socials_yo {background-position: 0 -100px;} li.socials_yo:hover {background-position: 0 -80px;}
+li.socials_vi {background-position: 0 -140px;} li.socials_vi:hover {background-position: 0 -120px;}
+li.socials_tu {background-position: 0 -180px;} li.socials_tu:hover {background-position: 0 -160px;}
+li.socials_de {background-position: 0 -220px;} li.socials_de:hover {background-position: 0 -200px;}
+li.socials_fl {background-position: 0 -260px;} li.socials_fl:hover {background-position: 0 -240px;}
+li.socials_li {background-position: 0 -300px;} li.socials_li:hover {background-position: 0 -280px;}
+li.socials_la {background-position: 0 -340px;} li.socials_la:hover {background-position: 0 -320px;}
+li.socials_my {background-position: 0 -380px;} li.socials_my:hover {background-position: 0 -360px;}
+li.socials_po {background-position: 0 -420px;} li.socials_po:hover {background-position: 0 -400px;}
+li.socials_sp {background-position: 0 -460px;} li.socials_sp:hover {background-position: 0 -440px;}
+li.socials_sk {background-position: 0 -500px;} li.socials_sk:hover {background-position: 0 -480px;}
+li.socials_ya {background-position: 0 -540px;} li.socials_ya:hover {background-position: 0 -520px;}
+li.socials_dl {background-position: 0 -580px;} li.socials_dl:hover {background-position: 0 -560px;}	
