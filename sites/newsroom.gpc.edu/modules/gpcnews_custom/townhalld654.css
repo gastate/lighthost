@@ -1,0 +1,24 @@
+.field-items p iframe{
+	width:560px !important;
+	 height:320px !important;
+	
+	}
+	
+iframe #layout4,#layout4-lsplayer{
+	 width:530px !important;
+	 height:320px !important;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {	
+	.field-items p iframe{
+	max-width:100% !important;
+	 max-height:50% !important;
+	
+	}
+	
+iframe #layout4,#layout4-lsplayer{
+	 max-width:100% !important;
+	 max-height:50% !important;
+}
+	
+}
