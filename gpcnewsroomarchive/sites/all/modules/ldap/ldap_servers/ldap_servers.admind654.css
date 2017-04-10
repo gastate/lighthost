@@ -1,11 +1,11 @@
 
 table.ldap-provision-todrupal input.convert, table.ldap-provision-toldap input.convert {
-  background-image: url('http://newsroom.gpc.edu/themes/seven/images/list-item.png');
+  background-image: url('/gpcnewsroomarchive/themes/seven/images/list-item.png');
   background-repeat: no-repeat;
 }
 
 div.ldap-pwd-abscent {
-  background-image:url('http://newsroom.gpc.edu/misc/message-16-error.png');
+  background-image:url('/gpcnewsroomarchive/misc/message-16-error.png');
   background-repeat:no-repeat;
   background-position: 2px 10px;
   padding-left: 20px;
@@ -13,7 +13,7 @@ div.ldap-pwd-abscent {
   }
 
 div.ldap-pwd-present  {
-  background-image:url('http://newsroom.gpc.edu/misc/message-16-ok.png');
+  background-image:url('/gpcnewsroomarchive/misc/message-16-ok.png');
   background-repeat:no-repeat;
   background-position: 2px 10px;
   padding-left: 20px;
